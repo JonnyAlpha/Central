@@ -211,7 +211,7 @@ def play_video(player, media):
     player.play()
 
 def welcome():
-    print("Hello Bill")
+    print("Hello")
     # Create a new VLC instance and media player:
     #
     # This could be done in one line using vlc.MediaPlayer()
@@ -222,9 +222,9 @@ def welcome():
     player = instance.media_player_new()
 
     # Create libVLC objects representing the two videos
-    video1 = vlc.Media("hello_bill.mp4")
-    video2 = vlc.Media("what_would_you_like.mp4")
-    video3 = vlc.Media("life_support.mp4")
+    video1 = vlc.Media("video1.mp4") #enter the name of the video file you wish to play and ensure the video is in the same directory as this program
+    video2 = vlc.Media("video2.mp4") #enter the name of the video file you wish to play and ensure the video is in the same directory as this program
+    video3 = vlc.Media("video3.mp4") #enter the name of the video file you wish to play and ensure the video is in the same directory as this program
 
     # Start the player for the first time
     play_video(player, video1)
@@ -239,14 +239,10 @@ def welcome():
                     play_video(player, video3)
                     current_video = video3
 
-
-
             elif current_video == video3 and player.get_state() == vlc.State.Ended:
                 return
         except:
             break
-
-
 
 startup()
 security()
