@@ -5,4 +5,12 @@ Central will be tested on this setup but may be moved to a separate Pi 4.
 As part of the overall project, the intent will also to have a mobile robot called Hammerstein Mk2. Hammerstein will be the eyes and ears on the ground for Central.
 
 **Explanation**
-The main program is called pi_central.py, this contains the main program. In the same folder you will need an image named reference.jpg, this is the image that is used by function face_detection to check whether the face (if found) is recognised. Once recognised the program will play a number of videos. These videos need to be in the same folder as the main program or the path to them needs to be amended in pi_central.py     
+The main program is called pi_central.py, this contains the main program. In the same folder you will need an image named reference.jpg, this is the image that is used by function face_detection to check whether the face (if found) is recognised. Once recognised the program will play a number of videos. These videos need to be in the same folder as the main program or the path to them needs to be amended in pi_central.py    
+
+**Requirements**
+To run the program the following mudules will need to be installed:
+opencv
+deepface
+python-vlc
+
+
